@@ -1,84 +1,109 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --one-color: #754403;
 }
 
 body {
-    background-color: rgb(228, 251, 238);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
+  background-color: rgb(255, 234, 209);
 }
 
-.formulario {
-    background-color: #fff;
-    width: 500px;
-    border-radius: 8px;
-    padding: 20px;
+.contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
-h1 {
+.card {
+  display: flex;
+  width: 600px;
+  padding: 20px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex-direction: column;
+}
+
+img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.omelette {
+  margin-top: 30px;
+  font-size: 40px;
+}
+
+.ingredientes {
+  color: var(--one-color);
+  margin-top: 20px;
+}
+
+.instrucciones {
+  color: var(--one-color);
+}
+
+.nutricion {
+    color: var(--one-color);
     margin-bottom: 20px;
 }
 
-.input-container {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 12px;
+.subtitulo {
+  margin-top: 10px;
 }
 
-.input-group {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 12px;
+.preparacion {
+  margin-top: 20px;
+  background-color: rgb(250, 242, 249);
+  border-radius: 5px;
+  padding: 20px;
+  /* margin: 3rem; */
 }
 
-label {
-    margin-bottom: 8px;
+.preparation {
+  margin-top: 5px;
+  margin-bottom: 15px;
+  color: purple;
 }
 
-input[type="text"],
-textarea {
-    height: 38px;
-    width: 220px;
-    padding: 8px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
+.lista {
+  /* list-style: none; */
+  margin: 20px 0 0 30px;
 }
 
-input[type="email"],
-textarea {
-    height: 38px;
-    width: 460px;
-    padding: 8px;
-    border-radius: 3px;
-    border: 1px solid #ccc;
+.separador {
+  margin:30px 0 30px 0;
 }
 
-#opcion1 {
-    margin-right: 8px;
-    border: 2px solid black;
+ol li::marker {
+  color: var(--one-color);
 }
 
-
-#message {
-    height: 100px;
+table {
+  width: 100%;
 }
 
-input[type="submit"] {
-    width: 100%;
-    margin-top: 16px;
-    padding: 10px 20px;
-    background-color: hsl(122, 67%, 41%);
-    color: white;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
+td {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
 }
 
-input[type="submit"]:hover {
-    background-color: #45a049;
+td:first-child {
+  text-align: left;
+}
+
+td:last-child {
+  text-align: left;
+  color: var(--one-color);
+}
+
+tr:last-child td {
+  border-bottom: none;
 }
